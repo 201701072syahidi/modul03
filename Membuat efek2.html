@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Belajar Efek2</title>
+    <style>
+        
+   .kertas { 
+   text-align: left;
+   position:relative;
+   width:200px;
+   padding:50px;
+   margin:2em auto;
+   color:#000;
+   background:#6BA7E8;
+   overflow:hidden; /*menyembunyikan bekkas lipatan*/
+        }
+
+   .kertas:after {
+   content:"";
+   position:absolute;
+   top:0;
+   left: -3px;
+   border-width:24px 24px 0 0;
+   border-style:solid;
+   border-color:#fff #6BA7E8 #6BA7E8 #6BA7E8;
+   display:block; width:0;
+        }
+
+    .kertas:before {
+   content:"";
+   position:absolute;
+   top:0;
+   right:0px;
+   border-width: 0 24px 24px  0;
+   border-style:solid;
+   border-color:#fff #fff #6BA7E8 #f0f0f0;
+   display:block; width:0;
+        }
+
+    </style>   
+</head>
+<body>
+    
+    <div class="kertas">
+    Fokus dong, fahami dan pelajari mata kuliah ini, biar jadi pakar di web developer, kan asik
+    </div>
+    
+</body>
+</html>

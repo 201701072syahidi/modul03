@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Membuat Efek5</title>
+		<style>
+		
+            #pie {
+            width: 100px; 
+            height: 100px;
+            border-radius: 50%;
+            background: yellowgreen;
+            background-image: linear-gradient(to right, transparent 50%, #655 0);
+            float:left
+            }
+            
+           #pie:before {
+            content: '';
+            display: block;
+            margin-left: 50%;
+            height: 100%;
+            border-radius: 0 100% 100% 0 / 50%;
+            /*background-color: inherit;*/
+            /*transform-origin: left;*/
+            background: yellowgreen;
+            transform-origin: left;
+            transform: rotate(.2turn);
+            } 
+            
+            #pai {
+            width: 100px; 
+            height: 100px;
+            border-radius: 50%;
+            background: yellowgreen;
+            background-image: linear-gradient(to right, transparent 50%, #655 0);
+            float:right;
+            }
+            
+           #pai:before {
+            content: '';
+            display: block;
+            margin-left: 50%;
+            height: 100%;
+            border-radius: 0 100% 100% 0 / 50%;
+            /*background-color: inherit;*/
+            transform-origin: left;
+            background: #655;
+            transform-origin: left;
+            transform: rotate(.1turn);
+            } 
+		</style>
+        
+	</head>
+	<body>
+		
+		<div id="pie"></div>
+        <div id="pai"></div>
+			
+	</body>
+</html>
